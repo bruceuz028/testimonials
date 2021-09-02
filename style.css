@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Klee One', cursive;
+}
+main{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+}
+.div{
+    border-radius: 15px;
+    background-color: #733FC8;
+    padding: 10px;
+    text-align: justify;
+    color: #fff;
+    width: 70%;
+    margin-right: 20px;
+}
+.w{
+    width: 300px;
+}
+.dv{
+    background-color: #49556B;
+    width: 30%;
+}
+.grey{
+    color: lightgrey;
+}
+.greys{
+    color: #111;
+}
+.person img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.r{
+    background-color: #D8DFE7;
+}
+.d{
+    background-color: #18202D;
+}
+.person{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.col1{
+    display: flex;
+}
+.col2{
+    display: flex;
+    margin-top: 20px;
+}
+@media (max-width:768px) {
+    main{
+        flex-direction: column;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-25%,-35%);
+    }
+    .col1{
+        flex-direction: column;
+    }
+    .col2{
+        flex-direction: column;
+    }
+    .div{
+        margin-bottom: 15px;
+        width: 600px;
+    }
+}
+@media (max-width:375px) {
+    main{
+        top: 20px;
+        transform: translate(5%,0%);
+    }
+}
